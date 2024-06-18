@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
             name='CarMake',
             fields=[
                 ('id', models.BigAutoField(auto_created=True,
-                primary_key=True, serialize=False, verbose_name='ID')),
+                    primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=30)),
                 ('description', models.TextField()),
             ],
@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
             name='CarModel',
             fields=[
                 ('id', models.BigAutoField(auto_created=True,
-                primary_key=True, serialize=False, verbose_name='ID')),
+                    primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=30)),
                 ('type', models.CharField(choices=[
                     ('sedan', 'sedan'),
