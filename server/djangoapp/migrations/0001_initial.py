@@ -11,8 +11,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='CarMake',
             fields=[
-                ('id', models.BigAutoField(auto_created=True,
-                primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True,
+                                            serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=30)),
                 ('description', models.TextField()),
             ],
@@ -20,8 +20,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='CarModel',
             fields=[
-                ('id', models.BigAutoField(auto_created=True,
-                primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True,
+                                            serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=30)),
                 ('type', models.CharField(choices=[
                     ('sedan', 'sedan'),
@@ -31,8 +31,10 @@ class Migration(migrations.Migration):
                     ('racing', 'racing')
                 ], max_length=30)),
                 ('dealer_id', models.IntegerField()),
-                ('car_make', models.ForeignKey(on_delete=models.deletion.CASCADE,
-                to='djangoapp.CarMake')),
+                ('car_make', models.ForeignKey(
+                    on_delete=models.deletion.CASCADE,
+                    to='djangoapp.CarMake'
+                )),
             ],
         ),
     ]
