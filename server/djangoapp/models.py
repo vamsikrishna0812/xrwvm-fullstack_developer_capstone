@@ -17,7 +17,7 @@ class CarMake(models.Model):
     name = models.CharField(max_length=30)
     description = models.TextField()
 
-    def __str__(self):  
+    def __str__(self):
         return self.name
 
 # <HINT> Create a Car Model model `class CarModel(models.Model):`:
@@ -39,9 +39,10 @@ class CarModel(models.Model):
         ('racing', 'racing'),
     )
     type = models.CharField(choices=type_choices, max_length=30)
-    
+
     year = models.IntegerField()
     car_make = models.ForeignKey(CarMake, on_delete=models.CASCADE)
 
-    def __str__(self):  
+    def __str__(self):
         return self.name
+    
