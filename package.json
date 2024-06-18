@@ -1,0 +1,26 @@
+{
+  "name": "lint_package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vamsikrishna0812/xrwvm-fullstack_developer_capstone.git"
+  },
+  "author": "vamsi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vamsikrishna0812/xrwvm-fullstack_developer_capstone/issues"
+  },
+  "homepage": "https://github.com/vamsikrishna0812/xrwvm-fullstack_developer_capstone#readme",
+  "devDependencies": {
+    "@eslint/compat": "^1.1.0",
+    "@eslint/js": "^9.5.0",
+    "eslint": "^9.5.0",
+    "eslint-plugin-react": "^7.34.2",
+    "globals": "^15.6.0"
+  }
+}
