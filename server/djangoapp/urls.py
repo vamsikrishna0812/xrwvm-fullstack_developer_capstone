@@ -6,12 +6,12 @@ from . import views
 
 app_name = 'djangoapp'
 urlpatterns = [
-    # # path for registration
+    # Path for registration
     path(route="register", view=views.registration, name="register"),
-    # path for login
+    # Path for login
     path(route='login', view=views.login_user, name='login'),
     path(route="logout", view=views.logout_request, name="logout"),
-    path(route='get_cars', view=views.get_cars, name ='getcars'),
+    path(route='get_cars', view=views.get_cars, name='getcars'),
     path(route='get_dealers', view=views.get_dealerships, name='get_dealers'),
 
     path(
@@ -33,8 +33,7 @@ urlpatterns = [
     ),
 
     path(route='add_review', view=views.add_review, name='add_review'),
-    # path for dealer reviews view
+    # Path for dealer reviews view
 
-    # path for add a review view
-
+    # Path for add a review view
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
