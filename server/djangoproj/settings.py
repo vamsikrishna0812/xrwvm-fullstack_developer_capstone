@@ -28,7 +28,7 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS=['localhost','https://abotulavamsi-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai']
+ALLOWED_HOSTS = ['localhost' , 'https://abotulavamsi-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai']
 CSRF_TRUSTED_ORIGINS=['https://abotulavamsi-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai']
 
 REST_FRAMEWORK = {
@@ -61,12 +61,12 @@ ROOT_URLCONF = 'djangoproj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-                'DIRS': [
-            os.path.join(BASE_DIR, 'frontend/static'),
-            os.path.join(BASE_DIR, 'frontend/build'),
-            os.path.join(BASE_DIR, 'frontend/build/static'),
-            os.path.join(BASE_DIR, 'frontend/build/public'),
-            os.path.join(BASE_DIR, 'frontend/build/public'),
+        'DIRS': [
+                os.path.join(BASE_DIR, 'frontend/static'),
+                os.path.join(BASE_DIR, 'frontend/build'),
+                os.path.join(BASE_DIR, 'frontend/build/static'),
+                os.path.join(BASE_DIR, 'frontend/build/public'),
+                os.path.join(BASE_DIR, 'frontend/build/public'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -89,28 +89,28 @@ WSGI_APPLICATION = 'djangoproj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        'PASSWORD':'MjE4ODUtYWJvdHVs',
-        'USER':'abotulavamsi',
+        'NAME' : BASE_DIR / 'db.sqlite3',
+        'PASSWORD' : 'MjE4ODUtYWJvdHVs',
+        'USER': 'abotulavamsi',
     }
 }
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME':
-        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+        'UserAttributeSimilarityValidator',
     },
     {
-        'NAME':
-        'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+        'MinimumLengthValidator',
     },
     {
-        'NAME':
-        'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+        'CommonPasswordValidator',
     },
     {
-        'NAME':
-        'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+        'NumericPasswordValidator',
     },
 ]
 
@@ -147,4 +147,3 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/build'),
     os.path.join(BASE_DIR, 'frontend/build/static'),
 ]
-
